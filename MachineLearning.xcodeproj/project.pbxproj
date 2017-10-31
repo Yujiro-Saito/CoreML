@@ -12,6 +12,10 @@
 		B74436371FA8AAE700214742 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B74436351FA8AAE700214742 /* Main.storyboard */; };
 		B74436391FA8AAE700214742 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B74436381FA8AAE700214742 /* Assets.xcassets */; };
 		B744363C1FA8AAE700214742 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B744363A1FA8AAE700214742 /* LaunchScreen.storyboard */; };
+		B74436441FA8B54C00214742 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B74436431FA8B54C00214742 /* Inceptionv3.mlmodel */; };
+		B74436461FA8BBD700214742 /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B74436451FA8BBD700214742 /* MobileNet.mlmodel */; };
+		B74436481FA8BCC900214742 /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B74436471FA8BCC900214742 /* SqueezeNet.mlmodel */; };
+		B7D595ED1FA8C23B003206CC /* GoogLeNetPlaces.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B7D595EC1FA8C23B003206CC /* GoogLeNetPlaces.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		B74436381FA8AAE700214742 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B744363B1FA8AAE700214742 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B744363D1FA8AAE700214742 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B74436431FA8B54C00214742 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		B74436451FA8BBD700214742 /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = "<group>"; };
+		B74436471FA8BCC900214742 /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
+		B7D595EC1FA8C23B003206CC /* GoogLeNetPlaces.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = GoogLeNetPlaces.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,10 @@
 			children = (
 				B74436311FA8AAE700214742 /* AppDelegate.swift */,
 				B74436331FA8AAE700214742 /* ViewController.swift */,
+				B74436431FA8B54C00214742 /* Inceptionv3.mlmodel */,
+				B74436451FA8BBD700214742 /* MobileNet.mlmodel */,
+				B7D595EC1FA8C23B003206CC /* GoogLeNetPlaces.mlmodel */,
+				B74436471FA8BCC900214742 /* SqueezeNet.mlmodel */,
 				B74436351FA8AAE700214742 /* Main.storyboard */,
 				B74436381FA8AAE700214742 /* Assets.xcassets */,
 				B744363A1FA8AAE700214742 /* LaunchScreen.storyboard */,
@@ -136,8 +148,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B74436461FA8BBD700214742 /* MobileNet.mlmodel in Sources */,
 				B74436341FA8AAE700214742 /* ViewController.swift in Sources */,
+				B74436481FA8BCC900214742 /* SqueezeNet.mlmodel in Sources */,
+				B74436441FA8B54C00214742 /* Inceptionv3.mlmodel in Sources */,
 				B74436321FA8AAE700214742 /* AppDelegate.swift in Sources */,
+				B7D595ED1FA8C23B003206CC /* GoogLeNetPlaces.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
