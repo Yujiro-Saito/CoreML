@@ -8,18 +8,41 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UINavigationControllerDelegate,UIImagePickerControllerDelegate {
 
+    // MARK: - Property
+    @IBOutlet weak var photoImageView: UIImageView!
+    @IBOutlet weak var resultLabel: UILabel!
+    let picker = UIImagePickerController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        picker.delegate = self
+        picker.allowsEditing = false
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    // MARK: - Method
+    
+    @IBAction func cameraButtonDidTap(_ sender: Any) {
+        if !UIImagePickerController.isSourceTypeAvailable(.camera) {
+            return
+        }
+        
+        picker.sourceType = .camera
+        present(picker,animated: true)
     }
-
-
+    
+    @IBAction func libraryButtonDidTap(_ sender: Any) {
+        picker.sourceType = .photoLibrary
+        present(picker, animated: true)
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
+    
 }
 
